@@ -17,6 +17,10 @@
 extern zend_module_entry sample3_module_entry;
 #define phpext_sample3_ptr &sample3_module_entry
 
+typedef struct _sample3_SecondClass_object {
+	zend_object std;
+} sample3_SecondClass_object;
+
 PHP_MINIT_FUNCTION(sample3);
 
 #endif /* PHP_SAMPLE3_H */
